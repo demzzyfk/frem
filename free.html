@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .hi{
+        margin-left: 50%;
+     }   
+    </style>
+</head>
+<body>
+    <h1 id="disPNum"></h1>
+    <button onclick="press(1,5)">1</button>
+    <button onclick="press(2)">2</button>
+    <button onclick="press(3)">3</button>
+
+
+    <input id="input" type="number">
+    <button onclick="hope()">push me</button>
+
+    <button class="hi" onclick="jum()">black / white</button>
+</body>
+</html>
+
+<script>
+    let guess = Math.floor((Math.random() * 10))
+    console.log(guess);
+
+    function hope(){
+        if(input.value == guess){
+            alert('correct')
+        }else{
+            alert('wrong')
+        }
+    }
+
+
+  function hi(){
+    
+  }
+
+
+   let blackgroundcolor = document.body.style.backgroundColor = "white"
+
+   function jum(){
+    document.body.style.backgroundColor == "white"? document.body.style.backgroundColor =
+     "black" : document.body.style.backgroundColor = "white"
+   }
+
+    
+</script>
